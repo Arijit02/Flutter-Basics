@@ -3,7 +3,6 @@ import 'package:tourism_app/widgets/location_tile.dart';
 import '../../widgets/image_banner.dart';
 import 'text_section.dart';
 import '../../models/location.dart';
-import '../../styles.dart';
 
 class LocationDetail extends StatelessWidget {
   final int _locationID;
@@ -17,8 +16,8 @@ class LocationDetail extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
           appBar: AppBar(
-              title: Text(location.name),
-              textTheme: TextTheme(headline6: AppBarTextStyle)),
+            title: Text(location.name),
+          ),
           body: SingleChildScrollView(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,

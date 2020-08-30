@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tourism_app/main.dart';
-// import '../../main.dart';
 import '../../models/location.dart';
 import '../../widgets/image_banner.dart';
-import '../../styles.dart';
 import '../locations/tile_overlay.dart';
 
 class Locations extends StatelessWidget {
@@ -14,7 +12,6 @@ class Locations extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Locations'),
-        textTheme: TextTheme(headline6: AppBarTextStyle),
       ),
       body: ListView.builder(
         itemCount: locations.length,
